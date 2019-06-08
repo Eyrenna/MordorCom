@@ -1,4 +1,4 @@
-package encinas.MordorCom;
+package encinas.MordorCom.tratamientos;
 
 import encinas.MordorCom.interfaces.TratamientoPedido;
 import encinas.MordorCom.pedidos.PedidoInternacional;
