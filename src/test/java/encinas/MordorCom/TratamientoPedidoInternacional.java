@@ -21,8 +21,11 @@ public class TratamientoPedidoInternacional implements TratamientoPedido {
 	}
 	
 	public boolean tratar() {
-		// TODO Auto-generated method stub
-		return false;
+		if (pedidoInt.destino() != "Mordor" ) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 
