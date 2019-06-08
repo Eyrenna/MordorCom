@@ -1,5 +1,7 @@
 package encinas.MordorCom;
 
+import java.util.UUID;
+
 import encinas.MordorCom.interfaces.PedidoPeligroso;
 
 public class PedidoPeligrosoOrden implements PedidoPeligroso {
@@ -7,6 +9,7 @@ public class PedidoPeligrosoOrden implements PedidoPeligroso {
 	private String destino = null;
 	private Integer peso = 0;
 	private String instrucciones = null;
+	private String id = UUID.randomUUID().toString();
 
 	public PedidoPeligrosoOrden(String destino, String instrucciones) {
 		super();
@@ -38,6 +41,14 @@ public class PedidoPeligrosoOrden implements PedidoPeligroso {
 
 	public String instrucciones() {
 		return instrucciones;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 }
