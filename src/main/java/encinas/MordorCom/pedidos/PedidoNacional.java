@@ -1,4 +1,4 @@
-package encinas.MordorCom;
+package encinas.MordorCom.pedidos;
 
 import java.util.UUID;
 
