@@ -17,6 +17,7 @@ import encinas.MordorCom.interfaces.TratamientoPedido;
 //import encinas.MordorCom.tratamientos.TratamientoPedidoInternacional;
 //import encinas.MordorCom.tratamientos.TratamientoPedidoMultiple;
 //import encinas.MordorCom.tratamientos.TratamientoPedidoPeligroso;
+import encinas.MordorCom.pedidos.PedidoInternacional;
 
 /**
  * NO PUEDES MODIFICAR EL CODIGO DE LOS CASOS TEST 
@@ -39,8 +40,7 @@ public class TestPedidos {
         Pedido pedidoInt = new PedidoInternacional("Mordor", 100);
         assertEquals("Mordor", pedidoInt.destino());
 
-		TratamientoPedido tratamientoKO = new TratamientoPedidoInternacional(
-                                                    (PedidoInternacional) pedidoInt);
+		TratamientoPedido tratamientoKO = new TratamientoPedidoInternacional((PedidoInternacional) pedidoInt);
         assertNotNull(tratamientoKO);
         assertFalse(tratamientoKO.tratar());			
 	}
